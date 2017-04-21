@@ -1,5 +1,9 @@
 //
 var express = require('express');
+var mongoose = require('mongoose');
+
+//connect to a specific db
+mongoose.connect('mongodb://localhost:27017/seeddatabase')
 
 //
 var app = express();
